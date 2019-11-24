@@ -13,10 +13,13 @@ Universal Payment Protocal defines a set of REST API to provide a clear and trac
   "notify_url": "https://your_api", //异步回调地址
   "return_url": "https://your_url" //同步返回地址
 }
+```
 
 返回讯息：
-``` json
-{"code_url:"url"} //你可以将用户转到这个地址 
+``` html
+<html>
+支付页面
+</html>
 ```
 
 ### 异步回调
