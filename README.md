@@ -2,7 +2,7 @@
 Universal Payment Protocal defines a set of REST API to provide a clear and traceable method for payment information to be disseminated and propagated.
 
 ## Create order 创建订单
-### `POST {api}/gateway/`
+### `POST {api}/gateway/order`
 参数列表：
 ``` json
 {
@@ -32,3 +32,5 @@ Universal Payment Protocal defines a set of REST API to provide a clear and trac
   "signature": md5(business_id+amount+out_trade_id+privteKey) //string privateKey = 密钥
 }
 ```
+
+請返回 `{"message":"success"}` 確保訂單成功完成
